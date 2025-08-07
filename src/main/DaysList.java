@@ -34,6 +34,10 @@ public class DaysList {
         return days.get(index);
     }
 
+    public boolean containsDay(String day) {
+    return days.contains(day);
+    }
+
     
 }
  
