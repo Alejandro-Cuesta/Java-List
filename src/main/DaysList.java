@@ -30,6 +30,10 @@ public class DaysList {
         return days.remove(day);
     }
 
+    public String getDay(int index) {
+        return days.get(index);
+    }
+
     
 }
  
