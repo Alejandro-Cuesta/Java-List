@@ -16,5 +16,9 @@ public class DaysList {
         days.add("Sábado");
         days.add("Domingo");
     }
+
+    public List<String> getDays() {
+        return days;
+    }
 }
  
