@@ -4,7 +4,7 @@ public class DaysList {
     private List<String> days;
 
     public DayList () {
-        this.days = new ArrayList<>() 
+        this.days = new ArrayList<>();
     }
 
     public void createDayList() {
