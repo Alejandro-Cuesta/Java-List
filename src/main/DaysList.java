@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class DaysList {
     private List<String> days;
@@ -20,5 +21,11 @@ public class DaysList {
     public List<String> getDays() {
         return days;
     }
+
+    public int getSize() {
+        return days.size();
+    }
+
+    
 }
  
