@@ -26,6 +26,10 @@ public class DaysList {
         return days.size();
     }
 
+    public boolean removeDays(String days) {
+        return days.remove(day);
+    }
+
     
 }
  
