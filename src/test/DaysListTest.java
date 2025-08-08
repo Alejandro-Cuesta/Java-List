@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
+
+import org.jetbrains.annotations.TestOnly;
+
 import java.util.Collections;
 
 public class DaysListTest {
@@ -53,5 +56,13 @@ public class DaysListTest {
         String day =dayList.getDay(0);
 
         assertEquals("Lunes," day);
+    }
+
+    @Test
+    public void testExistDay() {
+        daysList.createDayList();
+
+        asserTrue(daysList.existsDay("Lunes"));
+        assertFalse(daysList.existsDay("Fiesta"))
     }
 }
