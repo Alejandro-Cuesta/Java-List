@@ -76,4 +76,14 @@ public class DaysListTest {
         assertEquals("Domingo", sortDays.get(0));
         assertEquals("Viernes", sortDays.get(sortDays.size() - 1));
     }
+
+    @Test
+    public void testClearDays() {
+        daysList.createDayList();
+        assertEquals(7, daysList.getDaysCount());
+
+        daysList.clearDays();
+        assertEquals(0, daysList.getDaysCount());
+    } 
 } 
+
