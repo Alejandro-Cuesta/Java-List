@@ -35,5 +35,15 @@ public class DaysListTest {
         assertEquals(7, count); 
     }
 
-    
+    @Test 
+    public void testRemoveDay() {
+        daylist.createDayList();
+
+        asserTrue(daysList.existsDay("Lunes"));
+
+        dayList.removeDay("Lunes");
+
+        assertFalse(dayList.existsDay("Lunes"));
+        assertEquals(6, count);
+    }
 }
