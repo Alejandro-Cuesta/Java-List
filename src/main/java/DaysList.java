@@ -40,7 +40,7 @@ public class DaysList {
     }
 
     public void sortDays() {
-    Collections.sort(days); // .sort ordena por orden alfabetico //
+    Collections.sort(days); // sortCollections ordena por orden alfabetico //
     }
 
     public void clearDays() { // clear vacia la lista //

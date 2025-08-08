@@ -65,4 +65,15 @@ public class DaysListTest {
         asserTrue(daysList.existsDay("Lunes"));
         assertFalse(daysList.existsDay("Fiesta"))
     }
-}
+
+    @Test 
+    public void testSortDaysAlphabetically() {
+        daysList.createDayList();
+        daysList.SortDaysAlphabetically();
+
+        List<String> sortDays = daysList.getDays();
+
+        assertEquals("Domingo", sortDays.get(0));
+        assertEquals("Viernes", sortDays.get(sortDays.size() - 1));
+    }
+} 
