@@ -5,7 +5,7 @@ import java.util.Collections;
 public class DaysList {
     private List<String> days;
 
-    public DayList () {
+    public DaysList () {
         this.days = new ArrayList<>();
     }
 
