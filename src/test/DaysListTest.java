@@ -14,6 +14,16 @@ public class DaysListTest {
     @Test 
     public void test createDayList() {
         daylist.createDayList();
+
         assertNotNull(daysList.getDays());
     }
+
+    @Test
+    public void testGetDaysList(){
+        daylist.createDayList();
+        List<String> days = daysList.getDays();
+
+        assertNotNull(days);
+        assertTrue(days.contains("Lunes"));
+    } 
 }
