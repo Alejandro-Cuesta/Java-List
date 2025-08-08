@@ -26,4 +26,14 @@ public class DaysListTest {
         assertNotNull(days);
         assertTrue(days.contains("Lunes"));
     } 
+
+    @Test
+    public void testGetDaysCount(){
+        daylist.createDayList();
+        int count = daysList.getDaysCount();
+        
+        assertEquals(7, count); 
+    }
+
+    
 }
