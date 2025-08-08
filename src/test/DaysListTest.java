@@ -46,4 +46,12 @@ public class DaysListTest {
         assertFalse(dayList.existsDay("Lunes"));
         assertEquals(6, count);
     }
+
+    @Test 
+    public void testGetDay() {
+        daylist.createDayList();
+        String day =dayList.getDay(0);
+
+        assertEquals("Lunes," day);
+    }
 }
