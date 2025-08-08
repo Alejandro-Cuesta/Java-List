@@ -30,7 +30,7 @@ public class DaysList {
         return days.remove(day);
     }
 
-    public String getDay(int index) {
+    public String getDay(int index) { // Usamos int index para que el usuario pase la posición del elemento dentro de la lista //
         return days.get(index);
     }
 
@@ -42,6 +42,8 @@ public class DaysList {
     Collections.sort(days); // .sort ordena por orden alfabetico //
     }
 
-    
+    public void clearDays() {
+    days.clear();
+    }
 }
  
