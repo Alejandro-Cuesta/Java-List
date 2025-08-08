@@ -18,15 +18,15 @@ public class DaysList {
         days.add("Domingo");
     }
 
-    public List<String> getDays() {
+    public List<String> getDays() { // metodo get nos da los elementos //
         return days;
     }
 
-    public int getSize() {
+    public int getSize() { // metodo getSize nos da el tamaño //
         return days.size();
     }
 
-    public boolean removeDays(String days) {
+    public boolean removeDays(String days) { // remove borra el elemento que queramos //
         return days.remove(day);
     }
 
@@ -35,14 +35,14 @@ public class DaysList {
     }
 
     public boolean containsDay(String day) {
-    return days.contains(day); //  El método contains() de List comprueba si un elemento está en la lista.//
+    return days.contains(day); //  El método contains comprueba si un elemento está en la lista //
     }
 
     public void sortDays() {
     Collections.sort(days); // .sort ordena por orden alfabetico //
     }
 
-    public void clearDays() {
+    public void clearDays() { // clear vacia la lista //
     days.clear();
     }
 }
