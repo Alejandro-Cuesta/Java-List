@@ -35,7 +35,11 @@ public class DaysList {
     }
 
     public boolean containsDay(String day) {
-    return days.contains(day);
+    return days.contains(day); //  El método contains() de List comprueba si un elemento está en la lista.//
+    }
+
+    public void sortDays() {
+    Collections.sort(days); // .sort ordena por orden alfabetico //
     }
 
     
