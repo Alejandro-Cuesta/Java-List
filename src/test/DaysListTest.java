@@ -10,4 +10,10 @@ public class DaysListTest {
     public void setup() {
         daysList = new DaysList(); // crea nueva instancia antes de cada test
     } 
+
+    @Test 
+    public void test createDayList() {
+        daylist.createDayList();
+        assertNotNull(daysList.getDays());
+    }
 }
